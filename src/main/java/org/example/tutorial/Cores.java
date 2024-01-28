@@ -49,7 +49,7 @@ import software.amazon.awssdk.regions.Region;
 public class Cores {
 
     public static void main(String[] args) {
-        Region region = null;
+        Region region = Region.AP_NORTHEAST_2;
         PersonalizeClient personalizeClient = PersonalizeClient.builder()
                 .region(region)
                 .build();
@@ -58,7 +58,7 @@ public class Cores {
                 .region(region)
                 .build();
 
-        getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/campaignName4", "123");
+        getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/campaignName4_2104", "123");
     }
 
     // STEP3 데이터 가져오기
