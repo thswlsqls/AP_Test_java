@@ -12,7 +12,6 @@ import software.amazon.awssdk.services.personalize.model.PersonalizeException;
 import software.amazon.awssdk.services.personalize.model.CreateSchemaRequest;
 // dataset group packages
 import software.amazon.awssdk.services.personalize.model.CreateDatasetGroupRequest;
-import software.amazon.awssdk.services.personalize.model.DescribeDatasetGroupRequest;
 // dataset packages
 import software.amazon.awssdk.services.personalize.model.CreateDatasetRequest;
 // dataset import job packages
@@ -46,7 +45,7 @@ import java.util.List;
 // 2-1 Amazon Personalize 종속 항목을 pom.xml 파일에 추가하고 필요한 패키지를 가져온 후 다음과 같은 Amazon Personalize 클라이언트를 생성합니다.
 import software.amazon.awssdk.regions.Region;
 
-public class Cores {
+public class TutorialTest {
 
     public static void main(String[] args) {
         Region region = Region.AP_NORTHEAST_2;
