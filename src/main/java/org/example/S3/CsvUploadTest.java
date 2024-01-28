@@ -32,7 +32,7 @@ public class CsvUploadTest {
                     .build();
             // createBucket(s3, "dev-user-v2-20240128");
             // deleteBucket(s3, "dev-user-v2-20240128");
-            putObject(s3, "dev-user-v2-20240128");
+            // putObject(s3, "dev-user-v2-20240128");
             // deleteObject(s3, "dev-user-v2-20240128");
         } catch(Exception e) {
             System.out.println(e.getMessage());
