@@ -36,7 +36,7 @@ public class CsvUploadTest {
             // deleteObject(s3, "dev-user-v2-20240128");
         } catch(Exception e) {
             System.out.println(e.getMessage());
-            System.out.println(e.getStackTrace());
+            e.getStackTrace();
         }
 
     }
@@ -87,9 +87,10 @@ public class CsvUploadTest {
                     .build();
 
             //s3Client.putObject(objectRequest, RequestBody.fromByteBuffer(getRandomByteBuffer(10_000)));
-            s3Client.putObject(objectRequest, RequestBody.fromFile(new File("/Users/m1/Downloads/ml-latest-small/movies_test.csv")));
+            s3Client.putObject(objectRequest
+                    , RequestBody.fromFile(new File("/Users/m1/Downloads/ml-latest-small/movies_test.csv")));
         } catch(Exception e){
-            System.out.println(e.getStackTrace());
+            e.getStackTrace();
         }
     }
 
