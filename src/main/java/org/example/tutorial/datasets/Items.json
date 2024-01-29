@@ -1,20 +1,22 @@
 {
   "type": "record",
-  "name": "Interactions",
+  "name": "Items",
   "namespace": "com.amazonaws.personalize.schema",
   "fields": [
-    {
-      "name": "USER_ID",
-      "type": "string"
-    },
     {
       "name": "ITEM_ID",
       "type": "string"
     },
     {
-      "name": "TIMESTAMP",
-      "type": "long"
+      "name": "GENRES",
+      "type": [
+        "null",
+        "string"
+      ],
+      "categorical": true
     }
   ],
   "version": "1.0"
 }
+
+
