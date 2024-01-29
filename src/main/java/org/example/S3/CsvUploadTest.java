@@ -15,6 +15,12 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.util.Random;
 
+/**
+ *  csv 파일을 s3 클라우드로 업로드하기 위해서는
+ *  1. 전용 유저를 생성하고
+ *  2. AmazonS3FullAccess (arn:aws:iam::aws:policy/AmazonS3FullAccess) 정책 권한을 부여한 후
+ *  3. 전용 유저의 액세스키와 시크릿키를 생성해서 S3Client 의 크레덴셜으로 사용해야 한다.
+ * */
 
 public class CsvUploadTest {
 
