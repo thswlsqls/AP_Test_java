@@ -26,7 +26,7 @@ public class Step6_1 {
                 .region(region)
                 .build();
 
-        getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/campaignName4_2104", "123");
+        getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/my-campaign-v2-20240201", "123");
     }
 
     // 캠페인을 생성한 후 이 캠페인을 사용하여 추천을 받습니다.

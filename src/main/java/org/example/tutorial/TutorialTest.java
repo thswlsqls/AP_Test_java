@@ -57,7 +57,7 @@ public class TutorialTest {
                 .region(region)
                 .build();
 
-        getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/my-campaign-v1-20240129", "123");
+        getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/my-campaign-v2-20240201", "123");
     }
 
     // STEP3 데이터 가져오기
