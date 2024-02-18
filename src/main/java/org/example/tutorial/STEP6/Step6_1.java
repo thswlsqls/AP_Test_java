@@ -27,6 +27,12 @@ public class Step6_1 {
                 .build();
 
         getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/my-campaign-v2-20240201", "123");
+
+        /** dataset-group-shopnt-20240130 */
+        getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/campaign-shopnt-v1-20240130", "510");
+
+        /** dataset-group-hmall-20240217 */
+        getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/my-campaign-hmall-20240218", "880");
     }
 
     // 캠페인을 생성한 후 이 캠페인을 사용하여 추천을 받습니다.
