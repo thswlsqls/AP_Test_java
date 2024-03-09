@@ -29,7 +29,7 @@ public class Step6_1 {
         getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/my-campaign-v2-20240201", "123");
 
         /** dataset-group-shopnt-20240130 */
-        getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/campaign-shopnt-v1-20240130", "510");
+        // getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/campaign-shopnt-v1-20240130", "510");
 
         /** dataset-group-hmall-20240217 */
         getRecs(personalizeRuntimeClient, "arn:aws:personalize:ap-northeast-2:962369067237:campaign/my-campaign-hmall-20240218", "880");
@@ -52,7 +52,7 @@ public class Step6_1 {
             List<PredictedItem> items = recommendationsResponse.itemList();
             for (PredictedItem item: items) {
                 System.out.println("Item Id is : "+item.itemId());
-                System.out.println("Item score is : "+item.score());
+                //System.out.println("Item score is : "+item.score());
             }
 
         } catch (AwsServiceException e) {

@@ -33,8 +33,8 @@ public class CsvUploadTest {
                     .region(region)
                     .credentialsProvider(StaticCredentialsProvider.create(
                             AwsBasicCredentials.create(
-                                    "AKIA6AENKTDS2NYHDKFK"
-                                    , "4SEpHomhepB45FTeyA7ef9tpx+qcuOrrMkJrPxVR")))
+                                    ""
+                                    , "")))
                     .build();
             // createBucket(s3, "dev-user-v2-20240128");
             // deleteBucket(s3, "dev-user-v2-20240128");
